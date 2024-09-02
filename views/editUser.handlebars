@@ -1,0 +1,23 @@
+<h1>Edit User</h1>
+
+<form class="row g-3" method="POST" action="/user/update/{{user.id}}">
+  <div class="col-md-6">
+    <label for="firstName" class="form-label">First Name</label>
+    <input type="text" name="firstName" class="form-control" id="firstName" value="{{user.first_name}}" required>
+  </div>
+  <div class="col-md-6">
+    <label for="lastName" class="form-label">Last Name</label>
+    <input type="text" name="lastName" class="form-control" id="lastName" value="{{user.last_name}}" required>
+  </div>
+  <div class="col-md-6">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" id="email" value="{{user.email}}" required>
+  </div>
+  <div class="col-md-6">
+    <label for="phone" class="form-label">Phone</label>
+    <input type="text" name="phone" class="form-control" id="phone" value="{{user.phone}}" required>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Update User</button>
+  </div>
+</form>
